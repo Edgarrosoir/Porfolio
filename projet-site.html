@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Web Universitaire - Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Styles spécifiques à la page projet */
+        .tech-badge {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature-list {
+            columns: 2;
+            column-gap: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .feature-list {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Mon Portfolio</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#presentation">Présentation</a></li>
+                    <li><a href="index.html#competences">Compétences</a></li>
+                    <li><a href="index.html#diplomes">Diplômes</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="project-detail">
+            <div class="back-button">
+                <a href="competence1.html" class="btn"><i class="fas fa-arrow-left"></i> Retour à la compétence</a>
+            </div>
+            
+            <h2>Site Web Universitaire</h2>
+            
+            <div class="project-header">
+                <div class="project-image">
+                    <img src="images/Logo_JO_d'été_-_Paris_2024.svg.png" alt="Capture d'écran du site web universitaire">
+                </div>
+                <div class="project-info">
+                    <h3>Informations du projet</h3>
+                    <ul>
+                        <li><strong>Date :</strong> Octobre 2024</li>
+                        <li><strong>Durée :</strong> 3 mois</li>
+                        <li><strong>Contexte :</strong> Projet universitaire</li>
+                        <li><strong>Rôle :</strong> Développeur Front-end</li>
+                        <li><strong>Compétence :</strong> Développer des applications informatiques simples</li>
+                    </ul>
+                    
+                    <div class="tech-stack">
+                        <h4>Technologies utilisées :</h4>
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-content">
+                <h3>Description du projet</h3>
+                <p>Conception et développement d'un site web responsive pour un projet universitaire visant à présenter a site des JO sur un sport en particuler </p>
+                <h3>Fonctionnalités clés</h3>
+                <ul class="feature-list">
+                    <li>Design responsive adapté à tous les appareils</li>
+                    <li>Carrousel fonctionelle</li>
+                    <li>Animations réalisés via différent moyens</li>
+                </ul>
+                
+                <h3>Défis techniques</h3>
+                <div class="challenges">
+                    <div class="challenge-item">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Problème</h4>
+                        <p>Gestion des médias queries pour une compatibilité multi-appareils</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h4><i class="fas fa-lightbulb"></i> Solution</h4>
+                        <p>Compréhension des Fonctionnalités liées au média queries facilitant la manipulation de ceux-ci</p>
+                    </div>
+                </div>
+                
+                <h3>Apprentissages</h3>
+                <div class="learnings">
+                    <div class="learning-card">
+                        <i class="fas fa-code"></i>
+                        <p>Meilleure compréhension du fonctionnement HTML/CSS et JavaScript</p>
+                    </div>
+                    <div class="learning-card">
+                        <i class="fas fa-users"></i>
+                        <p>Travail collaboratif avec Git/GitHub</p>
+                    </div>
+                    <div class="learning-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <p>Importance du responsive design</p>
+                    </div>
+                </div>
+                
+
+                </div>
+                
+                <div class="project-links">
+                    <a href="https://github.com/Edgarrosoir" class="btn" target="_blank"><i class="fab fa-github"></i> Code source</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> 06 83 71 66 35</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:edgarmoreira079@gmail.com">edgarmoreira079@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Landerneau/Lannion</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Rodrigues Moreira Edgar.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

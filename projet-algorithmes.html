@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Automatisé - Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Styles spécifiques à la page projet */
+        .tech-badge {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature-list {
+            columns: 2;
+            column-gap: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .feature-list {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Mon Portfolio</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#presentation">Présentation</a></li>
+                    <li><a href="index.html#competences">Compétences</a></li>
+                    <li><a href="index.html#diplomes">Diplômes</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="project-detail">
+            <div class="back-button">
+                <a href="competence2.html" class="btn"><i class="fas fa-arrow-left"></i> Retour à la compétence</a>
+            </div>
+            
+            <h2>Snake Automatisé</h2>
+            
+            <div class="project-header">
+                <div class="project-image">
+                    <img src="images/Snake.png" alt="Capture d'écran du Snake automatisé">
+                </div>
+                <div class="project-info">
+                    <h3>Informations du projet</h3>
+                    <ul>
+                        <li><strong>Date :</strong> Novembre 2024</li>
+                        <li><strong>Durée :</strong> 2 semaines</li>
+                        <li><strong>Contexte :</strong> Projet universitaire</li>
+                        <li><strong>Rôle :</strong> Développeur algorithmique</li>
+                        <li><strong>Compétence :</strong> Appréhender et construire des algorithmes</li>
+                    </ul>
+                    
+                    <div class="tech-stack">
+                        <h4>Technologies utilisées :</h4>
+                        <span class="tech-badge">C</span>
+                        <span class="tech-badge">Algorithmes</span>
+                        <span class="tech-badge">Structures de données</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-content">
+                <h3>Description du projet</h3>
+                <p>Extension du jeu Snake en C avec implémentation d'un algorithme permettant au serpent de se déplacer automatiquement vers la nourriture tout en évitant les obstacles. Ce projet visait à explorer les algorithmes de pathfinding et de prise de décision.</p>
+                
+                <h3>Fonctionnalités clés</h3>
+                <ul class="feature-list">
+                    <li>Algorithme de recherche de chemin (A*)</li>
+                    <li>Détection et évitement des obstacles</li>
+                    <li>Optimisation des déplacements</li>
+                    <li>Gestion des cas particuliers (cul-de-sac)</li>
+                    <li>Visualisation du chemin calculé</li>
+                </ul>
+                
+                <h3>Défis techniques</h3>
+                <div class="challenges">
+                    <div class="challenge-item">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Problème</h4>
+                        <p>Optimisation des performances de l'algorithme pour un temps de réponse instantané</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h4><i class="fas fa-lightbulb"></i> Solution</h4>
+                        <p>Implémentation d'une file de priorité et limitation de la profondeur de recherche</p>
+                    </div>
+                </div>
+                
+                <h3>Apprentissages</h3>
+                <div class="learnings">
+                    <div class="learning-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <p>Maîtrise des algorithmes de pathfinding</p>
+                    </div>
+                    <div class="learning-card">
+                        <i class="fas fa-brain"></i>
+                        <p>Optimisation des structures de données</p>
+                    </div>
+                    <div class="learning-card">
+                        <i class="fas fa-chart-line"></i>
+                        <p>Analyse de complexité algorithmique</p>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="project-links">
+                    <a href="https://github.com/Edgarrosoir/" class="btn" target="_blank"><i class="fab fa-github"></i> Code source</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> 06 83 71 66 35</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:edgarmoreira079@gmail.com">edgarmoreira079@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Landerneau/Lannion</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Rodrigues Moreira Edgar.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

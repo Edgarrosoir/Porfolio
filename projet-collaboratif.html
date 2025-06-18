@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Collaboratif - Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .team-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .process-step {
+            border-left: 4px solid #3498db;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Mon Portfolio</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#presentation">Présentation</a></li>
+                    <li><a href="index.html#competences">Compétences</a></li>
+                    <li><a href="index.html#diplomes">Diplômes</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="project-detail">
+            <div class="back-button">
+                <a href="competence6.html" class="btn"><i class="fas fa-arrow-left"></i> Retour à la compétence</a>
+            </div>
+            
+            <h2>Projet Collaboratif </h2>
+            
+            <div class="project-header">
+                <div class="project-image">
+                    <img src="images/team.jpg" alt="Équipe de projet au travail">
+                </div>
+                <div class="project-info">
+                    <h3>Informations du projet</h3>
+                    <ul>
+                        <li><strong>Date :</strong> Mai 2025</li>
+                        <li><strong>Durée :</strong> 1 mois</li>
+                        <li><strong>Équipe :</strong> 4 personnes</li>
+                        <li><strong>Compétence :</strong> Travailler dans une équipe</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="project-content">
+                <h3>Contexte</h3>
+                <p>Développement d'une application web de gestion de tâches en équipe de 4 personnes, via JavaFx , Java , Scene Builder</p>
+                
+                <h3>Composition de l'équipe</h3>
+                <div class="team-card">
+                    <div class="team-avatar"><i class="fas fa-user fa-2x"></i></div>
+                    <div>
+                        <h4>Rôle : Maquettage</h4>
+                        <p>Responsable du maquettage de l'application </p>
+                    </div>
+                </div>
+                
+                <h3>Processus de travail</h3>
+                <div class="process-step">
+                    <h4><i class="fas fa-calendar-alt"></i>GitHub, Discord</h4>
+                    <p>Réalisation:</p>
+                    <ul>
+                        <li>Échange d 'information (communication via discord)</li>
+                        <li>Fichier sur GitHub</li>
+                        
+                    </ul>
+                </di>
+                
+                <div class="project-links">
+                    <a href="https://github.com/Edgarrosoir/" class="btn" target="_blank"><i class="fab fa-github"></i> Dépôt GitHub</a>
+                    <a href="docs/retrospective-projet.pdf" class="btn btn-secondary" download><i class="fas fa-file-pdf"></i> Compte-rendu</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> 06 83 71 66 35</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:edgarmoreira079@gmail.com">edgarmoreira079@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Landerneau/Lannion</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Rodrigues Moreira Edgar.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

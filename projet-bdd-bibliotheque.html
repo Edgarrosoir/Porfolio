@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Données Football - Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .tech-badge {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .schema-img {
+            width: 100%;
+            max-width: 800px;
+            margin: 1rem auto;
+            display: block;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Mon Portfolio</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#presentation">Présentation</a></li>
+                    <li><a href="index.html#competences">Compétences</a></li>
+                    <li><a href="index.html#diplomes">Diplômes</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="project-detail">
+            <div class="back-button">
+                <a href="competence4.html" class="btn"><i class="fas fa-arrow-left"></i> Retour à la compétence</a>
+            </div>
+            
+            <h2>Base de Données pour la Gestion des Championnats de Football</h2>
+            
+            <div class="project-header">
+                <div class="project-image">
+                    <img src="images/ele.png" alt="Schéma base de données football">
+                </div>
+                <div class="project-info">
+                    <h3>Informations du projet</h3>
+                    <ul>
+                        <li><strong>Date :</strong> Novembre 2022 - Janvier 2023</li>
+                        <li><strong>Durée :</strong> 6 semaines</li>
+                        <li><strong>Contexte :</strong> Projet universitaire</li>
+                        <li><strong>Compétence :</strong> Gérer des données de l'information</li>
+                    </ul>
+                    
+                    <div class="tech-stack">
+                        <h4>Technologies utilisées :</h4>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">Tutorial D</span>
+                        <span class="tech-badge">UML</span>
+                        <span class="tech-badge">Visual Paradigm</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-content">
+                <h3>Description du projet</h3>
+                <p>Conception et implémentation d'une base de données relationnelle pour la gestion des résultats des championnats de football français (Ligue 1, Ligue 2, Division 1 féminine, etc.), incluant clubs, équipes, joueurs, matches et statistiques.</p>
+                
+                <h3>Schéma conceptuel</h3>
+                <img src="images/Class_Diagram_Football(1).jpg" alt="Diagramme de classe UML du système football" class="schema-img">
+                
+                <h3>Livrables produits</h3>
+                <ul>
+                    <li>Diagramme de classe UML complet avec règles de gestion</li>
+                    <li>Script Tutorial D (.rel) pour création automatique du schéma</li>
+                    <li>Graphe des contraintes d'intégrité référentielles</li>
+                    <li>Script SQL de création de la base de données</li>
+                    <li>Requêtes SQL répondant aux besoins métiers</li>
+                </ul>
+                
+                <h3>Fonctionnalités implémentées</h3>
+                <ul>
+                    <li>Gestion des clubs et équipes (acronymes, entraîneurs)</li>
+                    <li>Suivi des saisons et journées de championnat</li>
+                    <li>Enregistrement des matches (dates, résultats, affluence)</li>
+                    <li>Gestion des joueurs (statistiques, compositions d'équipe)</li>
+                    <li>Suivi des cartons et temps de jeu</li>
+                </ul>
+                
+                <h3>Exemple de requête SQL</h3>
+                <div class="sql-example">
+                    <h4>Classement d'une ligue pour une saison donnée</h4>
+                    <pre><code>SELECT e.nom AS equipe, 
+       COUNT(CASE WHEN m.score_local > m.score_visiteur THEN 1 END) * 3 + 
+       COUNT(CASE WHEN m.score_local = m.score_visiteur THEN 1 END) AS points,
+       COUNT(CASE WHEN m.score_local > m.score_visiteur THEN 1 END) AS victoires,
+       COUNT(CASE WHEN m.score_local = m.score_visiteur THEN 1 END) AS nuls,
+       COUNT(CASE WHEN m.score_local < m.score_visiteur THEN 1 END) AS defaites,
+       SUM(m.score_local) AS buts_pour,
+       SUM(m.score_visiteur) AS buts_contre
+FROM Equipes e
+LEFT JOIN Matches m ON (e.id = m.equipe_local_id OR e.id = m.equipe_visiteur_id)
+WHERE m.saison_id = 12
+GROUP BY e.id
+ORDER BY points DESC, (buts_pour - buts_contre) DESC, buts_pour DESC;</code></pre>
+                </div>
+                
+                <div class="project-links">
+                    <a href="https://github.com/Edgarrosoir/" class="btn" target="_blank"><i class="fab fa-github"></i> Code source</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> 06 83 71 66 35</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:edgarmoreira079@gmail.com">edgarmoreira079@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Landerneau/Lannion</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Rodrigues Moreira Edgar.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

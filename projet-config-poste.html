@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration Poste - Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .tech-badge {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature-list {
+            columns: 2;
+            column-gap: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .feature-list {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Mon Portfolio</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#presentation">Présentation</a></li>
+                    <li><a href="index.html#competences">Compétences</a></li>
+                    <li><a href="index.html#diplomes">Diplômes</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="project-detail">
+            <div class="back-button">
+                <a href="competence3.html" class="btn"><i class="fas fa-arrow-left"></i> Retour à la compétence</a>
+            </div>
+            
+            <h2>Configuration Poste de Développement</h2>
+            
+            <div class="project-header">
+                <div class="project-image">
+                    <img src="images/config.jpg" alt="Poste de développement configuré">
+                </div>
+                <div class="project-info">
+                    <h3>Informations du projet</h3>
+                    <ul>
+                        <li><strong>Date :</strong> Septembre 2024</li>
+                        <li><strong>Durée :</strong> 1 semaine</li>
+                        <li><strong>Contexte :</strong> Projet universitaire</li>
+                        <li><strong>Compétence :</strong> Installer et configurer un poste de travail</li>
+                    </ul>
+                    
+                    <div class="tech-stack">
+                        <h4>Technologies utilisées :</h4>
+                        <span class="tech-badge">Windows 11</span>
+                        <span class="tech-badge">WSL2</span>
+                        <span class="tech-badge">Visual Studio Code</span>
+                        <span class="tech-badge">Git</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-content">
+                <h3>Description du projet</h3>
+                <p>p>Configuration optimale d'un poste de développement avec installation et paramétrage de Docker et des outils nécessaires pour un environnement de travail reproductible, conforme pratiques aux professionnels</p>
+                
+                <h3>Étapes clés</h3>
+                <ul class="feature-list">
+                    <Li>Installation et configuration de Docker avec WSL2Li/ li>
+                    <Li>Mise en place de l'environnement de développement conteneurLi/ li>
+                    <Li>Gestion des images Docker et création de conteneursLi/ li>
+                    <Li>Automatisation des tâches avec des scripts BashLi/ li>
+                    <Li>Configuration des partages de fichiers entre hôte et conteneursLi/ li>
+                    <Li>Optimisation des performances et gestion des ressourcesLi/ li>
+                </ul>
+                
+                <h3>Défis techniques</h3>
+                <div class="challenges">
+                    <div class="challenge-item">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Problème</h4>
+                        <p>Compatibilité entre Windows et Linux pour le développement multiplateforme</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h4><i class="fas fa-lightbulb"></i> Solution</h4>
+                        <p>Utilisation de WSL2 avec intégration transparente dans VS Code</p>
+                    </div>
+                </div>
+                
+                <h3>Apprentissages</h3>
+                <div class="learnings">
+                    <div class="learning-card">
+                        <i class="fas fa-cogs"></i>
+                        <p>Maîtrise des outils système avancés</p>
+                    </div>
+                    <div class="learning-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <p>Configuration de la sécurité et des permissions</p>
+                    </div>
+                    <div class="learning-card">
+                        <i class="fas fa-tools"></i>
+                        <p>Automatisation des installations logicielles</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> 06 83 71 66 35</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:edgarmoreira079@gmail.com">edgarmoreira079@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Landerneau/Lannion</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Rodrigues Moreira Edgar.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
